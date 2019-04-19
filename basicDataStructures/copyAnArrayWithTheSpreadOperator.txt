@@ -30,3 +30,18 @@ console.log(copyMachine([true, false, true], 2));
 **********************************************************
 ANSWER:
 
+function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {
+
+newArr.push([...arr]); 
+//or newArr.unshift([...arr]);
+
+
+    
+    num--;
+  }
+  return newArr;
+}
+
+console.log(copyMachine([true, false, true], 2));
