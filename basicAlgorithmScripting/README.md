@@ -1,0 +1,1 @@
+This directory contains all challenges from FreeCodeCamp.org's Basic Algorithm Scripting Section.
