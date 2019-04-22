@@ -1,0 +1,27 @@
+Basic Algorithm Scripting: Repeat a String Repeat a String
+Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a positive number.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+***********************
+PROBLEM:
+
+function repeatStringNumTimes(str, num) {
+  // repeat after me
+  return str;
+}
+
+repeatStringNumTimes("abc", 3);
+
+
+********************************
+ANSWER:
+function repeatStringNumTimes(str, num) {
+  var accumulatedStr = '';
+
+  while (num > 0) {
+    accumulatedStr += str;
+    num--;
+  }
+
+  return accumulatedStr;
+}
