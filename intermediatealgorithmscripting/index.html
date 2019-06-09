@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>Intermediate Algorithm Scripting: Sum All Primes</h1>
+    <p>Sum all the prime numbers up to and including the provided number.
+        <br>
+        <br>A prime number is defined as a number greater than one and having only two divisors, one and itself.
+        <br>
+        <br>For example, 2 is a prime number because it's only divisible by one and two.
+
+        <h2>PROBLEM:</h2>
+        <p>function sumPrimes(num) {
+            <br>
+            <br>return num;
+            <br>
+            <br>}
+            <br>
+            <br>sumPrimes(10);
+
+            <br>
+            <br>
+            <h2>ANSWER:</h2>
+
+            <script>
+                function sumPrimes(num) {
+
+                    var result = true;
+                    for (var i = 2; i < num; i++) {
+
+                        if (num % i == 0) {
+                            result = false;
+                            break;
+
+                        }
+                        return result;
+                    }
+            </script>
+</body>
+
+</html>
