@@ -5,38 +5,31 @@ The lowest number will not always come first.
 
 Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write your own code.
 
-DRAFT:
+ANSWER:
 
-// function sumAll(arr) {
-//   return 1;
-// }
+Intermediate Algorithm Scripting: Sum All Numbers in a Range
+We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.
 
-// sumAll([1, 4]);
-
-
-var arr = [1,4];
-
-
-
-function sumAll(total, arr) {
-console.log( total + arr);  
-}
-function myFunction(item) {
-  arr.reduce(sumAll);
-
-}
-
-
-
-myFunction();
-
-
-function inBetween() { 
-for(var i = 1; i < 4; i++) {
-  console.log(i);
-}
-}
-inBetween();
+The lowest number will not always come first.
 
 ANSWER:
+
+function sumAll(arr) {
+  //sort the numbers in an array
+
+  arr.sort(function(a,b) { return a-b})
+
+  //Find the numbers in between the two numbers in the arr
+
+  console.log(arr)
+  var result = 0;
+  for(var i = arr[0]; i <= arr[1]; i++) {
+    result+= i
+    
+  } 
+  //Add all of the numbers together including the two numbers in arr
+  return result
+}
+
+sumAll([10,4])
 
